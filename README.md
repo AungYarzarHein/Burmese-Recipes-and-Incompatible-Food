@@ -11,7 +11,7 @@
 
 ### For IOS 
 
-** not available right now **
+_not available right now_
 
 
 ## App Screenshots
