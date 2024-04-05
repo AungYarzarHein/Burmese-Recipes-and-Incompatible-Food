@@ -3,6 +3,9 @@ import { ActivityIndicator, Alert, Dimensions, Image, Pressable, ScrollView, Sty
 import { allImages } from '../utils/images/allImages';
 import Animated, { FadeInLeft, FadeInUp } from 'react-native-reanimated';
 
+
+
+
 const { width } = Dimensions.get("window") ;
 
 
@@ -44,13 +47,12 @@ const FoodDetails = ({route,navigation}) => {
 <Animated.Text style={styles.ingredients} entering={FadeInLeft.delay(400)} > {CookingInstructions} </Animated.Text>
     </ScrollView>
 
+ 
 
     <Pressable style={[styles.btn,{left:5}]} onPress={onGoBack} >
       <Text style={styles.btnText} > Back </Text>
     </Pressable>
-    <Pressable style={[styles.btn,{right:5}]} onPress={onSave} >
-      <Text style={styles.btnText} > Save </Text>
-    </Pressable>
+   
     </View>
   )
 }
@@ -60,15 +62,16 @@ const styles = StyleSheet.create({
     container:{
         flex:1,
         backgroundColor:"#f3f3f3",
-        position:"relative"
+        position:"relative",
+        alignItems:"center"
     },
     name:{
       fontFamily:"tangu",
       fontSize:20,
-      color:"#fff",
+      color:"#333",
       textAlign:"center",
       paddingVertical:15,
-      backgroundColor:"#436564ff",
+      // backgroundColor:"#436564ff",
       verticalAlign:"middle"
     },
     ingredients:{

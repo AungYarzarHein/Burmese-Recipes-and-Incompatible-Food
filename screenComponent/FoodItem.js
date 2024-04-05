@@ -18,7 +18,7 @@ const FoodItem = ({item,navigation,index}) => {
     return (
         <Animated.View style={styles.container} entering={entering}  >
         <Pressable onPress={onPressHandler} >
-        <Image source={allImages[item.imageText]} style={{width:itemWidth-10,height:itemWidth-10,objectFit:"cover"}}  />
+        <Image source={allImages[item.imageText]} style={{width:itemWidth-10,height:itemWidth-10,objectFit:"cover",borderRadius:7}}  />
         </Pressable>
          <Text style={styles.text} > {item.Name.trim().split(" ").join("")} </Text>
         </Animated.View>
@@ -28,12 +28,13 @@ const FoodItem = ({item,navigation,index}) => {
     
     const styles = StyleSheet.create({
         container:{
-            backgroundColor:"#76b5aa44",
+            backgroundColor:"#76b5aa99",
             width:itemWidth,
             alignItems:"center",
             paddingTop:5,
             gap:5,
             marginHorizontal:3,
+            borderRadius:10
             // elevation:0.5,
             // borderRadius:6,
             // borderWidth:2,

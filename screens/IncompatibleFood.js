@@ -56,7 +56,7 @@ const IncompatibleFood = ({navigation}) => {
 
   return (
    <View style={styles.container} >
-    <Animated.View style={styles.headerCom} entering={ZoomIn.duration(300).delay(100)} >
+    <Animated.View style={styles.headerCom} entering={FadeInDown.duration(300).delay(100)} >
         <SearchBarCom onSearchHandler={onSearchHandler} onGoBack={onGoBack} />
     </Animated.View>
 
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
         backgroundColor:"#f2f2f2"
     },
     headerCom:{
-        backgroundColor:"#edd1aaff",
+        backgroundColor:"#76b5aa99",
         justifyContent:"flex-end"
     }
 })

@@ -14,7 +14,7 @@ const IncomItem = ({obj}) => {
 
 const styles = StyleSheet.create({
     itemContainer:{
-        backgroundColor:"#edd1aa66",
+        backgroundColor:"#76b5aa99",
         padding:15,
         elevation:0.5,
         borderRadius:6

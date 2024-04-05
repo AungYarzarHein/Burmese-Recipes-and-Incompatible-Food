@@ -48,8 +48,8 @@ const FoodList = ({navigation}) => {
         <Text style={styles.btnText} >Back</Text>
       </AnimatedBtn>
       <Text style={{fontFamily:"tangu",color:"#333",verticalAlign:"middle",fontSize:16}} >ဟင်းအမျိုးမျိုးချက်နည်း </Text> 
-      <AnimatedBtn style={styles.btn} entering={FadeInRight} onPress={onGoBack} >
-        <Text style={styles.btnText}  >Back</Text>
+      <AnimatedBtn  entering={FadeInRight} style={{width:80}} >
+        <Text style={{color:"transparent"}}  >Back</Text>
       </AnimatedBtn>
         </View>
         <FlatList
@@ -62,7 +62,7 @@ const FoodList = ({navigation}) => {
                 <FoodItem item={item} navigation={navigation} key={item.Guid} index={index} />
             )
           }}
-          contentContainerStyle={{paddingHorizontal:4,paddingBottom:50,gap:5}}
+          contentContainerStyle={{paddingHorizontal:4,paddingBottom:50,gap:10}}
           style={styles.flatlist}
           onEndReached={getMoreItem}
           onEndReachedThreshold={0.05}
@@ -98,15 +98,22 @@ const FoodList = ({navigation}) => {
         btn:{
             width:80,
             height:36,
+            // backgroundColor:"#436564ff",
+            // justifyContent:"center",
+            // alignItems:"center",
+            // borderRadius:10,
+            // borderWidth:2,
+            // borderColor:"#76b5aa44"
             backgroundColor:"#436564ff",
             justifyContent:"center",
             alignItems:"center",
             borderRadius:10,
-            borderWidth:3,
-            borderColor:"#76b5aa44"
+            borderWidth:2,
+            borderColor:"#76b5aa44",
         },
         btnText:{
-            color:"#fff"
+            color:"#fff",
+            fontFamily:"tangu"
         }
     })
 

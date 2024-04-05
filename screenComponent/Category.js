@@ -11,7 +11,7 @@ const Btn = ({active,item,setActive}) => {
         setActive(item);
     }
     return(
-        <Pressable style={[styles.btn,{backgroundColor:(active == item) ? "#436564ff" : "#edd1aaff"}]} onPress={onPressHandler} >
+        <Pressable style={[styles.btn,{backgroundColor:(active == item) ? "#436564ff" : "#76b5aa99"}]} onPress={onPressHandler} >
          <Text style={[styles.btnText,{color:(active == item) ? "#fff" : "#333"}]} > {item} </Text>
        </Pressable>
     )
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     },
     btn:{
         paddingHorizontal:10,
-        backgroundColor:"#edd1aaff",
+        backgroundColor:"#76b5aa99",
         borderRadius:10,
         borderWidth:2,
         borderColor:"#ffffff55"

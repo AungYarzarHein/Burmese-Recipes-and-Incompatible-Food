@@ -28,7 +28,7 @@ const SearchBarCom = ({onSearchHandler,onGoBack}) => {
 
 const styles = StyleSheet.create({
     container:{
-        padding:10,
+        padding:5,
         flexDirection:"row",
     },
     searchBar:{
@@ -37,10 +37,10 @@ const styles = StyleSheet.create({
         flex:1,
         fontFamily:"tangu",
         paddingHorizontal:10,
-        paddingVertical:6,
+        paddingVertical:5,
         textAlign:"center",
         borderWidth:2,
-        borderColor:"#43656455"
+        borderColor:"#76b5aa99"
     },
     searchBtn:{
         width:searchBarWidth * 0.25,

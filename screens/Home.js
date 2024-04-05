@@ -16,10 +16,10 @@ const Home = ({navigation}) => {
   
   return (
     <SafeAreaView style={styles.container} >
-     <ImageBackground source={bg} style={{width,height:width,justifyContent:"flex-end"}} >
+     <ImageBackground source={bg} style={{width:width-10,height:width,justifyContent:"flex-end"}} >
       <View style={{flexDirection:"column",backgroundColor:"#00000066"}} >
       <Text style={{fontFamily:"tangu",fontSize:26,color:"#fff",textAlign:"center",paddingVertical:10}} > မင်္ဂလာပါရှင့် </Text>
-      <Text style={{fontFamily:"sakar",fontSize:16,color:"#fff",textAlign:"center",paddingHorizontal:10,paddingBottom:10,lineHeight:26}} > အိမ်ရှင်မတွေအတွက်ဟင်းအမျိုးမျိုးချက်နည်းနှင့်တွဲဖက်မစားသင့်သောအစားအစာများကိုဖော်ပြပေးပါမယ်ရှင့် </Text>
+      <Text style={{fontFamily:"sakar",fontSize:16,color:"#fff",textAlign:"center",paddingHorizontal:5,paddingBottom:10,lineHeight:26}} > အိမ်ရှင်မတွေအတွက်ဟင်းအမျိုးမျိုးချက်နည်းနှင့်တွဲဖက်မစားသင့်သောအစားအစာများကိုဖော်ပြပေးပါမယ်ရှင့် </Text>
       </View>
      </ImageBackground>
      <View style={[styles.card,{marginTop:10}]}  >
@@ -44,13 +44,14 @@ const Home = ({navigation}) => {
 const styles = StyleSheet.create({
     container:{
         flex:1,
-        backgroundColor:"#edd1aaff"
+        backgroundColor:"#0080802c",
+        paddingHorizontal:5
     },
     card:{
       width:width,
       height:itemHeight,
       // backgroundColor:"#76b5aaff",
-      backgroundColor:"#edd1aaff",
+      // backgroundColor:"#edd1aaff",
       padding:10,
       flexDirection:"row",
       
@@ -74,7 +75,8 @@ const styles = StyleSheet.create({
     btnText:{
       fontFamily:"tangu",
       color:"#000",
-      fontSize:20
+      fontSize:16,
+      textAlign:"center"
     }
 })
 

@@ -5,9 +5,9 @@
 
 ## Download Apk
 ### For Android
-[arm64-v8a](https://drive.google.com/file/d/1ca9HhUREgH-pQ2X9MpX9s6jzwaUzCM2h/view?usp=drivesdk)
+[arm64-v8a](https://drive.google.com/file/d/1e9Ob3qBVBOkkBvCRkF3zH2UPLpTUfN60/view?usp=drivesdk)
 
-[armeabi-v7a](https://drive.google.com/file/d/1cbHIA-ysGeJBzs4oqsrBFoLLN8MqhcWj/view?usp=drivesdk)
+[armeabi-v7a](https://drive.google.com/file/d/1eJQq1HRuJj6FLJEV_rhRBIHVgj54X9Ho/view?usp=drivesdk)
 
 ### For IOS 
 
@@ -16,7 +16,7 @@ _not available right now_
 
 ## App Screenshots
 
-![screenshot](/utils/images/appui.jpg) ![screenshot](/utils/images/appui1.jpg)
+![screenshot](/utils/images/appPreview.png) 
 
 
 
